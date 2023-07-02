@@ -74,7 +74,7 @@ _**Sample JSON**_
 Endpoints
 ---------
 
-## **/upload** :
+1. ## **/upload** :
 
     
     URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
