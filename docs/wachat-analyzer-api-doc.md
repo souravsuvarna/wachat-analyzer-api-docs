@@ -515,7 +515,7 @@ _**Python Example:**_
 
   
 
-10. ## /num-of-media-shared**:  
+10. ## **/num-of-media-shared**:  
 
     
     URL: [https://wachatanalyzer.onrender.com/num-of-media-shared](https://wachatanalyzer.onrender.com/num-of-media-shared)
@@ -585,7 +585,7 @@ _**Python Example:**_
 
   
 
-12. ## **/most-emoji-shared**:  
+12. ## **/most-emoji-shared:  
 
     
     URL: [https://wachatanalyzer.onrender.com/most-emoji-shared](https://wachatanalyzer.onrender.com/most-emoji-shared)
@@ -629,7 +629,7 @@ _**Python Example:**_
 
   
 
-13. ## **/late-night-chat-dat**:  
+13. ## **/late-night-chat-data**:  
 
     
     URL: [https://wachatanalyzer.onrender.com/late-night-chat-data](https://wachatanalyzer.onrender.com/late-night-chat-data)
@@ -699,10 +699,10 @@ _**Python Example:**_
 
     url = "https://wachatanalyzer.onrender.com/early-morning-chat-data"
     response = requests.post(url, json=json_data)
-    >    ```  
     
-    >**Response Sample** :
-    >>>```json
+    
+ **Response Sample** :
+    
     [
         {
             'User': 'John', 
