@@ -93,47 +93,47 @@ Endpoints
 
 > _**Python Example:**_
 > 
-> >       url = "https://wachatanalyzer.onrender.com/upload"
-> >       with open("filename.txt", "rb") as file:
-> >           files = {"file": file}
-> >           response = requests.post(url, files=files)
-> >       json_data = response.json()
-> >     
+>        url = "https://wachatanalyzer.onrender.com/upload"
+>        with open("filename.txt", "rb") as file:
+>            files = {"file": file}
+>            response = requests.post(url, files=files)
+>        json_data = response.json()
+>      
 
 > **Response Sample** :
 > 
-> > >     {
-> > >      "Main": [
-> > >          { 
-> > >           "user": "jhon",
-> > >           "message": "hello", 
-> > >           "year": 2020,
-> > >           "month": "August",
-> > >           "day": 24,
-> > >           "hour": 8,
-> > >           "minute": 45,
-> > >           "seconds": 33,
-> > >           "dayname": "Monday"
-> > >           "month_num": 8
-> > >           },
-> > >           {
-> > >           "user": "Chris",
-> > >           "message": "Morning", 
-> > >           "year": 2020,
-> > >           "month": "August",
-> > >           "day": 24,
-> > >           "hour": 9,
-> > >           "minute": 25,
-> > >           "seconds": 03,
-> > >           "dayname": "Monday"
-> > >           "month_num": 8
-> > >           },
-> > >           {  
-> > >             '''
-> > >           }
-> > >       ]
-> > >     }
-> > >     
+>      {
+>       "Main": [
+>           { 
+>            "user": "jhon",
+>            "message": "hello", 
+>            "year": 2020,
+>            "month": "August",
+>            "day": 24,
+>            "hour": 8,
+>            "minute": 45,
+>            "seconds": 33,
+>            "dayname": "Monday"
+>            "month_num": 8
+>            },
+>            {
+>            "user": "Chris",
+>            "message": "Morning", 
+>            "year": 2020,
+>            "month": "August",
+>            "day": 24,
+>            "hour": 9,
+>            "minute": 25,
+>            "seconds": 03,
+>            "dayname": "Monday"
+>            "month_num": 8
+>            },
+>            {  
+>              '''
+>            }
+>         ]
+>      }
+>      
 
   
 
