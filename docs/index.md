@@ -135,7 +135,7 @@ _**Python Example:**_
 
   
 
-## 2 **/group-memebers** :  
+## **/group-memebers** :  
     
 URL: [https://wachatanalyzer.onrender.com/group-memebers](https://wachatanalyzer.onrender.com/group-memebers)
     
@@ -191,7 +191,7 @@ _**Python Example:**_
 
   
 
-## 3 **/fetch-stats** :  
+## **/fetch-stats** :  
     
     
 URL: [https://wachatanalyzer.onrender.com/fetch-stats](https://wachatanalyzer.onrender.com/fetch-stats)
@@ -234,7 +234,7 @@ _**Python Example:**_
     
 
   
-## 4 **/overall-activity** :  
+## **/overall-activity** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/overall-activity](https://wachatanalyzer.onrender.com/overall-activity)
@@ -284,7 +284,7 @@ _**Python Example:**_
     
 
   
-## 5 **/top-active-members** :  
+## **/top-active-members** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/top-active-members](https://wachatanalyzer.onrender.com/top-active-members)
@@ -329,7 +329,7 @@ _**Python Example:**_
     
 
   
-## 6 **/chat-percenatage** :  
+## **/chat-percenatage** :  
     
     
 URL: [https://wachatanalyzer.onrender.com/chat-percentage](https://wachatanalyzer.onrender.com/chat-percentage)
@@ -375,7 +375,7 @@ _**Python Example:**_
 
   
 
-## 7 **/monthly-activity** :  
+## **/monthly-activity** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/monthly-activity](https://wachatanalyzer.onrender.com/monthly-activity)
@@ -421,7 +421,7 @@ _**Python Example:**_
     
 
   
-## 8 **/weekly-activity** :  
+## **/weekly-activity** :  
   
     
 URL: [https://wachatanalyzer.onrender.com/weekly-activity](https://wachatanalyzer.onrender.com/weekly-activity)
@@ -462,7 +462,7 @@ _**Python Example:**_
     
 
   
-## 9 **/daily-activity** :  
+## **/daily-activity** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/daily-activity](https://wachatanalyzer.onrender.com/daily-activity)
@@ -507,7 +507,7 @@ _**Python Example:**_
     
 
   
-## 10 **/num-of-media-shared** :  
+## **/num-of-media-shared** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/num-of-media-shared](https://wachatanalyzer.onrender.com/num-of-media-shared)
@@ -541,7 +541,7 @@ _**Python Example:**_
     
 
   
-## 11 **/num-of-emoji-shared** :  
+## **/num-of-emoji-shared** :  
 
 URL: [https://wachatanalyzer.onrender.com/num-of-emoji-shared](https://wachatanalyzer.onrender.com/num-of-emoji-shared)
     
@@ -574,7 +574,7 @@ _**Python Example:**_
     
 
   
-## 12 **/most-emoji-shared :  
+## **/most-emoji-shared :  
 
     
 URL: [https://wachatanalyzer.onrender.com/most-emoji-shared](https://wachatanalyzer.onrender.com/most-emoji-shared)
@@ -617,7 +617,7 @@ _**Python Example:**_
     
 
   
-## 13 **/late-night-chat-data** :  
+## **/late-night-chat-data** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/late-night-chat-data](https://wachatanalyzer.onrender.com/late-night-chat-data)
@@ -666,7 +666,7 @@ _**Python Example:**_
     
 
   
-## 14 **/early-morning-chat-data** :  
+## **/early-morning-chat-data** :  
 
     
 URL: [https://wachatanalyzer.onrender.com/early-morning-chat-data](https://wachatanalyzer.onrender.com/early-morning-chat-data)
