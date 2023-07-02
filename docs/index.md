@@ -74,18 +74,17 @@ _**Sample JSON**_
 Endpoints
 ---------
 
-1. ## **/upload** :
-
+## 1 **/upload** :
     
-    URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
+URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, .txt file
+Parameters: url, .txt file
     
-    **Description**: This endpoint receives a WhatsApp Chat .txt file and returns processed data in **JSON** format. **Later this particular **JSON** will be passed to the rest all endpoints**.
+**Description**: This endpoint receives a WhatsApp Chat .txt file and returns processed data in **JSON** format. **Later this particular **JSON** will be passed to the rest all endpoints**.
     
       
     
@@ -136,18 +135,17 @@ _**Python Example:**_
 
   
 
-2. ## **/group-memebers** :  
+## 2 **/group-memebers** :  
     
+URL: [https://wachatanalyzer.onrender.com/group-memebers](https://wachatanalyzer.onrender.com/group-memebers)
     
-    URL: [https://wachatanalyzer.onrender.com/group-memebers](https://wachatanalyzer.onrender.com/group-memebers)
+HTTP Method: POST
     
-    HTTP Method: POST
+Response Format: JSON
     
-    Response Format: JSON
+Parameters: url, json
     
-    Parameters: url, json
-    
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") And returns list of members of group in JSON format. In this list the first field is **Overall Group** which can be used as parameter for the entire group analysis, and other particular member name can be used as the parameter for respective individual analysis.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") And returns list of members of group in JSON format. In this list the first field is **Overall Group** which can be used as parameter for the entire group analysis, and other particular member name can be used as the parameter for respective individual analysis.
     
       
     
@@ -193,18 +191,18 @@ _**Python Example:**_
 
   
 
-3.  ## **/fetch-stats** :  
+## 3 **/fetch-stats** :  
     
     
-    URL: [https://wachatanalyzer.onrender.com/fetch-stats](https://wachatanalyzer.onrender.com/fetch-stats)
+URL: [https://wachatanalyzer.onrender.com/fetch-stats](https://wachatanalyzer.onrender.com/fetch-stats)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload And returns json format of,  
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload And returns json format of,  
     
     * Total Messages
     * Total Words
@@ -236,19 +234,18 @@ _**Python Example:**_
     
 
   
+## 4 **/overall-activity** :  
 
-4.  ## **/overall-activity** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/overall-activity](https://wachatanalyzer.onrender.com/overall-activity)
+URL: [https://wachatanalyzer.onrender.com/overall-activity](https://wachatanalyzer.onrender.com/overall-activity)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, And returns json, Which consist **Date** and **Message** on that Date.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, And returns json, Which consist **Date** and **Message** on that Date.
     
       
     
@@ -287,19 +284,18 @@ _**Python Example:**_
     
 
   
+## 5 **/top-active-members** :  
 
-5.  ## **/top-active-members** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/top-active-members](https://wachatanalyzer.onrender.com/top-active-members)
+URL: [https://wachatanalyzer.onrender.com/top-active-members](https://wachatanalyzer.onrender.com/top-active-members)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json
+Parameters: url, json
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Message** in decreasing order of number of **Message** in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Message** in decreasing order of number of **Message** in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
@@ -333,19 +329,18 @@ _**Python Example:**_
     
 
   
-
-6. ## **/chat-percenatage** :  
+## 6 **/chat-percenatage** :  
     
     
-    URL: [https://wachatanalyzer.onrender.com/chat-percentage](https://wachatanalyzer.onrender.com/chat-percentage)
+URL: [https://wachatanalyzer.onrender.com/chat-percentage](https://wachatanalyzer.onrender.com/chat-percentage)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json
+Parameters: url, json
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Percentage** in decreasing order of number of **Percenatge** in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Percentage** in decreasing order of number of **Percenatge** in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
@@ -380,18 +375,18 @@ _**Python Example:**_
 
   
 
-7.  ## **/monthly-activity** :  
+## 7 **/monthly-activity** :  
 
     
-    URL: [https://wachatanalyzer.onrender.com/monthly-activity](https://wachatanalyzer.onrender.com/monthly-activity)
+URL: [https://wachatanalyzer.onrender.com/monthly-activity](https://wachatanalyzer.onrender.com/monthly-activity)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Month** and **Message** in that month sent by selected user.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Month** and **Message** in that month sent by selected user.
     
       
     
@@ -426,19 +421,18 @@ _**Python Example:**_
     
 
   
-
-8.  ## **/weekly-activity** :  
+## 8 **/weekly-activity** :  
   
     
-    URL: [https://wachatanalyzer.onrender.com/weekly-activity](https://wachatanalyzer.onrender.com/weekly-activity)
+URL: [https://wachatanalyzer.onrender.com/weekly-activity](https://wachatanalyzer.onrender.com/weekly-activity)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Week** and **Message** in that weekday sent by selected user.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Week** and **Message** in that weekday sent by selected user.
     
       
     
@@ -468,19 +462,18 @@ _**Python Example:**_
     
 
   
+## 9 **/daily-activity** :  
 
-9.  ## **/daily-activity** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/daily-activity](https://wachatanalyzer.onrender.com/daily-activity)
+URL: [https://wachatanalyzer.onrender.com/daily-activity](https://wachatanalyzer.onrender.com/daily-activity)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Hour** and **Message** in that Hour sent by selected user.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Hour** and **Message** in that Hour sent by selected user.
     
       
     
@@ -514,19 +507,18 @@ _**Python Example:**_
     
 
   
+## 10 **/num-of-media-shared** :  
 
-10. ## **/num-of-media-shared** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/num-of-media-shared](https://wachatanalyzer.onrender.com/num-of-media-shared)
+URL: [https://wachatanalyzer.onrender.com/num-of-media-shared](https://wachatanalyzer.onrender.com/num-of-media-shared)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json
+Parameters: url, json
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Media** in decreasing order of number of **Media** in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Media** in decreasing order of number of **Media** in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
@@ -549,19 +541,17 @@ _**Python Example:**_
     
 
   
+## 11 **/num-of-emoji-shared** :  
 
-11. ## **/num-of-emoji-shared** :  
-
+URL: [https://wachatanalyzer.onrender.com/num-of-emoji-shared](https://wachatanalyzer.onrender.com/num-of-emoji-shared)
     
-    URL: [https://wachatanalyzer.onrender.com/num-of-emoji-shared](https://wachatanalyzer.onrender.com/num-of-emoji-shared)
+HTTP Method: POST
     
-    HTTP Method: POST
+Response Format: JSON
     
-    Response Format: JSON
+Parameters: url, json
     
-    Parameters: url, json
-    
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Emoji** in decreasing order of number of **Emoji** in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Emoji** in decreasing order of number of **Emoji** in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
@@ -584,19 +574,18 @@ _**Python Example:**_
     
 
   
+## 12 **/most-emoji-shared :  
 
-12. ## **/most-emoji-shared :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/most-emoji-shared](https://wachatanalyzer.onrender.com/most-emoji-shared)
+URL: [https://wachatanalyzer.onrender.com/most-emoji-shared](https://wachatanalyzer.onrender.com/most-emoji-shared)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json payload
+Parameters: url, json payload
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Emoji** and **Sent** by selected user.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main") and **username** as payload, and returns the json which consist **Emoji** and **Sent** by selected user.
     
       
     
@@ -628,19 +617,18 @@ _**Python Example:**_
     
 
   
+## 13 **/late-night-chat-data** :  
 
-13. ## **/late-night-chat-data** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/late-night-chat-data](https://wachatanalyzer.onrender.com/late-night-chat-data)
+URL: [https://wachatanalyzer.onrender.com/late-night-chat-data](https://wachatanalyzer.onrender.com/late-night-chat-data)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json
+Parameters: url, json
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Messages** in decreasing order of number of **Messages** sent beween 23:00 to 3:00 in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Messages** in decreasing order of number of **Messages** sent beween 23:00 to 3:00 in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
@@ -678,19 +666,18 @@ _**Python Example:**_
     
 
   
+## 14 **/early-morning-chat-data** :  
 
-14. ## **/early-morning-chat-data** :  
-
     
-    URL: [https://wachatanalyzer.onrender.com/early-morning-chat-data](https://wachatanalyzer.onrender.com/early-morning-chat-data)
+URL: [https://wachatanalyzer.onrender.com/early-morning-chat-data](https://wachatanalyzer.onrender.com/early-morning-chat-data)
     
-    HTTP Method: POST
+HTTP Method: POST
     
-    Response Format: JSON
+Response Format: JSON
     
-    Parameters: url, json
+Parameters: url, json
     
-    **Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Messages** in decreasing order of number of **Messages** sent beween 4:00 to 6:00 in json format. **This endpoint only applicable for entire group analysis**.
+**Description**: This endpoint receives previously returned **JSON**(i.e "Main"), And returns the **User** and **Messages** in decreasing order of number of **Messages** sent beween 4:00 to 6:00 in json format. **This endpoint only applicable for entire group analysis**.
     
       
     
