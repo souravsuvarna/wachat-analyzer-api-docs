@@ -1,4 +1,4 @@
- WhatsApp Chat Analyzer API
+WhatsApp Chat Analyzer API
 ==========================
 
 Welcome to the WhatsApp Chat Analyzer API Documentation
@@ -56,7 +56,7 @@ _**Example**_
 
 ### Response Body
 
- _**Sample JSON**_
+_**Sample JSON**_
 
     {
       "user": "jhon",
@@ -74,9 +74,8 @@ _**Example**_
 Endpoints
 ---------
 
-1.  ## **/upload**:  
-    
-  
+1.  **/upload**:
+    ------------
     
     URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
     
@@ -91,49 +90,49 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
->        url = "https://wachatanalyzer.onrender.com/upload"
->        with open("filename.txt", "rb") as file:
->            files = {"file": file}
->            response = requests.post(url, files=files)
->        json_data = response.json()
->      
+_**Python Example:**_
 
-> **Response Sample** :
-> 
->      {
->       "Main": [
->           { 
->            "user": "jhon",
->            "message": "hello", 
->            "year": 2020,
->            "month": "August",
->            "day": 24,
->            "hour": 8,
->            "minute": 45,
->            "seconds": 33,
->            "dayname": "Monday"
->            "month_num": 8
->            },
->            {
->            "user": "Chris",
->            "message": "Morning", 
->            "year": 2020,
->            "month": "August",
->            "day": 24,
->            "hour": 9,
->            "minute": 25,
->            "seconds": 03,
->            "dayname": "Monday"
->            "month_num": 8
->            },
->            {  
->              '''
->            }
->         ]
->      }
->      
+     url = "https://wachatanalyzer.onrender.com/upload"
+     with open("filename.txt", "rb") as file:
+         files = {"file": file}
+         response = requests.post(url, files=files)
+     json_data = response.json()
+    
+
+**Response Sample** :
+
+    {
+     "Main": [
+         { 
+          "user": "jhon",
+          "message": "hello", 
+          "year": 2020,
+          "month": "August",
+          "day": 24,
+          "hour": 8,
+          "minute": 45,
+          "seconds": 33,
+          "dayname": "Monday"
+          "month_num": 8
+          },
+          {
+          "user": "Chris",
+          "message": "Morning", 
+          "year": 2020,
+          "month": "August",
+          "day": 24,
+          "hour": 9,
+          "minute": 25,
+          "seconds": 03,
+          "dayname": "Monday"
+          "month_num": 8
+          },
+          {  
+            '''
+          }
+      ]
+    }
+    
 
   
 
@@ -154,44 +153,44 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/group-members"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >       {
-> > >         'username': 'Overall Group'
-> > >       },
-> > >       {
-> > >         'username': 'Moein'
-> > >       },
-> > >       {
-> > >         'username': 'John'
-> > >       },
-> > >       {
-> > >         'username': 'Michel'
-> > >       },
-> > >       {
-> > >         'username': 'Chris'
-> > >       },
-> > >       {
-> > >         'username': 'Root'
-> > >       },
-> > >       {
-> > >         'username': 'Nick'
-> > >       },
-> > >       {
-> > >         'username': 'Starc'
-> > >       },
-> > >       {
-> > >         'username': 'Vin'
-> > >       }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/group-members"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+      {
+        'username': 'Overall Group'
+      },
+      {
+        'username': 'Moein'
+      },
+      {
+        'username': 'John'
+      },
+      {
+        'username': 'Michel'
+      },
+      {
+        'username': 'Chris'
+      },
+      {
+        'username': 'Root'
+      },
+      {
+        'username': 'Nick'
+      },
+      {
+        'username': 'Starc'
+      },
+      {
+        'username': 'Vin'
+      }
+    ]
+    
 
   
 
@@ -217,26 +216,26 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/fetch-stats"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     {
-> > >         'Total Messages': 8078, 
-> > >         'Total Words': 30259, 
-> > >         'Media Shared': 1875, 
-> > >         'Link Shared': 79
-> > >     }
-> > >     
+    url = "https://wachatanalyzer.onrender.com/fetch-stats"
+    username="Overall Group"
+    payload = {
+       "data": json_data,
+       "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    {
+        'Total Messages': 8078, 
+        'Total Words': 30259, 
+        'Media Shared': 1875, 
+        'Link Shared': 79
+    }
+    
 
   
 
@@ -257,38 +256,38 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/overall-activity"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {
-> > >             'Date': '2020-02-07', 
-> > >             'Message': 56
-> > >         }, 
-> > >         {
-> > >             'Date': '2020-02-08', 
-> > >             'Message': 13
-> > >         }, 
-> > >         {
-> > >             'Date': '2020-02-10', 
-> > >             'Message': 27
-> > >         }, 
-> > >         {
-> > >             'Date': '2020-02-14', 
-> > >             'Message': 35
-> > >         }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/overall-activity"
+    username="Overall Group"
+    payload = {
+        "data": json_data,
+        "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    [
+        {
+            'Date': '2020-02-07', 
+            'Message': 56
+        }, 
+        {
+            'Date': '2020-02-08', 
+            'Message': 13
+        }, 
+        {
+            'Date': '2020-02-10', 
+            'Message': 27
+        }, 
+        {
+            'Date': '2020-02-14', 
+            'Message': 35
+        }
+    ]
+    
 
   
 
@@ -309,33 +308,33 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/top-active-members"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {
-> > >             'User': 'John', 
-> > >             'Message': 1788
-> > >         }, 
-> > >         {
-> > >             'User': 'Nick',
-> > >             'Message': 840
-> > >         }, 
-> > >         {
-> > >             'User': 'Mike,
-> > >             'Message': 828
-> > >         }, 
-> > >         {
-> > >             'User': 'Ryal',
-> > >             'Message': 753
-> > >         }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/top-active-members"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+        {
+            'User': 'John', 
+            'Message': 1788
+        }, 
+        {
+            'User': 'Nick',
+            'Message': 840
+        }, 
+        {
+            'User': 'Mike,
+            'Message': 828
+        }, 
+        {
+            'User': 'Ryal',
+            'Message': 753
+        }
+    ]
+    
 
   
 
@@ -356,33 +355,33 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/chat-percentage"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {
-> > >             'User': 'Chris', 
-> > >             'Percentage': 50.13
-> > >         }, 
-> > >         {
-> > >             'User': 'Nick',
-> > >             'Percentage': 23.4
-> > >         }, 
-> > >         {
-> > >             'User': 'John',
-> > >             'Percentage': 16.4
-> > >         }, 
-> > >         {
-> > >             'User': 'Ryal',
-> > >             'Percentage': 10.07
-> > >         }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/chat-percentage"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+        {
+            'User': 'Chris', 
+            'Percentage': 50.13
+        }, 
+        {
+            'User': 'Nick',
+            'Percentage': 23.4
+        }, 
+        {
+            'User': 'John',
+            'Percentage': 16.4
+        }, 
+        {
+            'User': 'Ryal',
+            'Percentage': 10.07
+        }
+    ]
+    
 
   
 
@@ -403,34 +402,34 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/monthly-activity"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'Month': 'January', 'Message': 202}, 
-> > >         {'Month': 'February', 'Message': 1383}, 
-> > >         {'Month': 'March', 'Message': 2018}, 
-> > >         {'Month': 'April', 'Message': 494}, 
-> > >         {'Month': 'May', 'Message': 519}, 
-> > >         {'Month': 'June', 'Message': 388}, 
-> > >         {'Month': 'July', 'Message': 816}, 
-> > >         {'Month': 'August', 'Message': 1632}, 
-> > >         {'Month': 'September', 'Message': 173}, 
-> > >         {'Month': 'October', 'Message': 163}, 
-> > >         {'Month': 'November', 'Message': 40}, 
-> > >         {'Month': 'December', 'Message': 250}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/monthly-activity"
+    username="Overall Group"
+    payload = {
+        "data": json_data,
+        "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    [
+        {'Month': 'January', 'Message': 202}, 
+        {'Month': 'February', 'Message': 1383}, 
+        {'Month': 'March', 'Message': 2018}, 
+        {'Month': 'April', 'Message': 494}, 
+        {'Month': 'May', 'Message': 519}, 
+        {'Month': 'June', 'Message': 388}, 
+        {'Month': 'July', 'Message': 816}, 
+        {'Month': 'August', 'Message': 1632}, 
+        {'Month': 'September', 'Message': 173}, 
+        {'Month': 'October', 'Message': 163}, 
+        {'Month': 'November', 'Message': 40}, 
+        {'Month': 'December', 'Message': 250}
+    ]
+    
 
   
 
@@ -451,29 +450,29 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/weekly-activity"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'Day': 'Monday', 'Message': 1017}, 
-> > >         {'Day': 'Tuesday', 'Message': 879}, 
-> > >         {'Day': 'Wednesday', 'Message': 1183}, 
-> > >         {'Day': 'Thursday', 'Message': 1054}, 
-> > >         {'Day': 'Friday', 'Message': 1057}, 
-> > >         {'Day': 'Saturday', 'Message': 1462}, 
-> > >         {'Day': 'Sunday', 'Message': 1426}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/weekly-activity"
+    username="Overall Group"
+    payload = {
+        "data": json_data,
+        "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    [
+        {'Day': 'Monday', 'Message': 1017}, 
+        {'Day': 'Tuesday', 'Message': 879}, 
+        {'Day': 'Wednesday', 'Message': 1183}, 
+        {'Day': 'Thursday', 'Message': 1054}, 
+        {'Day': 'Friday', 'Message': 1057}, 
+        {'Day': 'Saturday', 'Message': 1462}, 
+        {'Day': 'Sunday', 'Message': 1426}
+    ]
+    
 
   
 
@@ -494,33 +493,33 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/daily-activity"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'Hour': 0, 'Message': 52}, 
-> > >         {'Hour': 1, 'Message': 3}, 
-> > >         {'Hour': 2, 'Message': 6}, 
-> > >         {'Hour': 3, 'Message': 1}, 
-> > >         {'Hour': 4, 'Message': 4}, 
-> > >         {'Hour': 5, 'Message': 1}, 
-> > >         {'Hour': 6, 'Message': 35}, 
-> > >         {'Hour': 7, 'Message': 54}, 
-> > >         {'Hour': 8, 'Message': 311}, 
-> > >         {'Hour': 9, 'Message': 199}
-> > >         {'''}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/daily-activity"
+    username="Overall Group"
+    payload = {
+        "data": json_data,
+        "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    [
+        {'Hour': 0, 'Message': 52}, 
+        {'Hour': 1, 'Message': 3}, 
+        {'Hour': 2, 'Message': 6}, 
+        {'Hour': 3, 'Message': 1}, 
+        {'Hour': 4, 'Message': 4}, 
+        {'Hour': 5, 'Message': 1}, 
+        {'Hour': 6, 'Message': 35}, 
+        {'Hour': 7, 'Message': 54}, 
+        {'Hour': 8, 'Message': 311}, 
+        {'Hour': 9, 'Message': 199}
+        {'''}
+    ]
+    
 
   
 
@@ -541,22 +540,22 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/num-of-media-shared"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'User': 'Mike', 'Media': 291}, 
-> > >         {'User': 'John', 'Media': 268}, 
-> > >         {'User': 'Ryal', 'Media': 256}, 
-> > >         {'User': 'Starc', 'Media': 153}, 
-> > >         {'User': 'Nick', 'Media': 126}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/num-of-media-shared"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+        {'User': 'Mike', 'Media': 291}, 
+        {'User': 'John', 'Media': 268}, 
+        {'User': 'Ryal', 'Media': 256}, 
+        {'User': 'Starc', 'Media': 153}, 
+        {'User': 'Nick', 'Media': 126}
+    ]
+    
 
   
 
@@ -577,22 +576,22 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/num-of-emoji-shared"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'User': 'Mike', 'Emoji': 391}, 
-> > >         {'User': 'John', 'Emoji': 228}, 
-> > >         {'User': 'Ryal', 'Emoji': 216}, 
-> > >         {'User': 'Starc', 'Emoji': 153}, 
-> > >         {'User': 'Nick', 'Emoji': 116}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/num-of-emoji-shared"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+        {'User': 'Mike', 'Emoji': 391}, 
+        {'User': 'John', 'Emoji': 228}, 
+        {'User': 'Ryal', 'Emoji': 216}, 
+        {'User': 'Starc', 'Emoji': 153}, 
+        {'User': 'Nick', 'Emoji': 116}
+    ]
+    
 
   
 
@@ -613,31 +612,31 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/most-shared-emojis"
-> >     username="Overall Group"
-> >     payload = {
-> >       "data": json_data,
-> >       "username": username
-> >     }
-> >     response = requests.post(url,json=payload)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {'Emoji': '🤣', 'Sent': 930}, 
-> > >         {'Emoji': '😂', 'Sent': 469}, 
-> > >         {'Emoji': '😆', 'Sent': 422}, 
-> > >         {'Emoji': '🔥', 'Sent': 231}, 
-> > >         {'Emoji': '🤦', 'Sent': 70}, 
-> > >         {'Emoji': '🥺', 'Sent': 60}, 
-> > >         {'Emoji': '💔', 'Sent': 60}, 
-> > >         {'Emoji': '🙄', 'Sent ': 55}, 
-> > >         {'Emoji': '👍', 'Sent': 52}
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/most-shared-emojis"
+    username="Overall Group"
+    payload = {
+        "data": json_data,
+        "username": username
+    }
+    response = requests.post(url,json=payload)
+    
+
+**Response Sample** :
+
+    [
+        {'Emoji': '🤣', 'Sent': 930}, 
+        {'Emoji': '😂', 'Sent': 469}, 
+        {'Emoji': '😆', 'Sent': 422}, 
+        {'Emoji': '🔥', 'Sent': 231}, 
+        {'Emoji': '🤦', 'Sent': 70}, 
+        {'Emoji': '🥺', 'Sent': 60}, 
+        {'Emoji': '💔', 'Sent': 60}, 
+        {'Emoji': '🙄', 'Sent ': 55}, 
+        {'Emoji': '👍', 'Sent': 52}
+    ]
+    
 
   
 
@@ -658,37 +657,37 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/late-night-chat-data"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {
-> > >             'User': 'John', 
-> > >             'Messages': 137
-> > >         }, 
-> > >         {
-> > >             'User': 'Nick', 
-> > >             'Messages': 49
-> > >         }, 
-> > >         {
-> > >             'User': 'Joseph',
-> > >             'Messages': 40
-> > >         }, 
-> > >         {
-> > >             'User': 'Chris',
-> > >             'Messages': 36
-> > >         }, 
-> > >         {
-> > >             'User': 'Vin', 
-> > >             'Messages': 32
-> > >         }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/late-night-chat-data"
+    response = requests.post(url, json=json_data)
+    
+
+**Response Sample** :
+
+    [
+        {
+            'User': 'John', 
+            'Messages': 137
+        }, 
+        {
+            'User': 'Nick', 
+            'Messages': 49
+        }, 
+        {
+            'User': 'Joseph',
+            'Messages': 40
+        }, 
+        {
+            'User': 'Chris',
+            'Messages': 36
+        }, 
+        {
+            'User': 'Vin', 
+            'Messages': 32
+        }
+    ]
+    
 
   
 
@@ -709,44 +708,44 @@ Endpoints
       
     
 
-> _**Python Example:**_
-> 
-> >     url = "https://wachatanalyzer.onrender.com/early-morning-chat-data"
-> >     response = requests.post(url, json=json_data)
-> >     
+_**Python Example:**_
 
-> **Response Sample** :
-> 
-> > >     [
-> > >         {
-> > >             'User': 'John', 
-> > >             'Messages': 137
-> > >         }, 
-> > >         {
-> > >             'User': 'Nick', 
-> > >             'Messages': 49
-> > >         }, 
-> > >         {
-> > >             'User': 'Joseph',
-> > >             'Messages': 40
-> > >         }, 
-> > >         {
-> > >             'User': 'Chris',
-> > >             'Messages': 36
-> > >         }, 
-> > >         {
-> > >             'User': 'Vin', 
-> > >             'Messages': 32
-> > >         }
-> > >     ]
-> > >     
+    url = "https://wachatanalyzer.onrender.com/early-morning-chat-data"
+    response = requests.post(url, json=json_data)
+    >    ```  
+    
+    >**Response Sample** :
+    >>>```json
+    [
+        {
+            'User': 'John', 
+            'Messages': 137
+        }, 
+        {
+            'User': 'Nick', 
+            'Messages': 49
+        }, 
+        {
+            'User': 'Joseph',
+            'Messages': 40
+        }, 
+        {
+            'User': 'Chris',
+            'Messages': 36
+        }, 
+        {
+            'User': 'Vin', 
+            'Messages': 32
+        }
+    ]
+    
 
   
 
 ### Developed by
 
-> The API was developed by [Sourav Suvarna](https://www.linkedin.com/in/souravsuvarna/)
+The API was developed by [Sourav Suvarna](https://www.linkedin.com/in/souravsuvarna/)
 
 ### Open Source
 
-> This API is open source and hosted on [GitHub](https://github.com/souravsuvarna/WhatsApp-Chat-Analyzer-API)
+This API is open source and hosted on [GitHub](https://github.com/souravsuvarna/WhatsApp-Chat-Analyzer-API)
