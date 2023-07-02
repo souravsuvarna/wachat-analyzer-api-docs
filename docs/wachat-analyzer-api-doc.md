@@ -74,8 +74,8 @@ _**Sample JSON**_
 Endpoints
 ---------
 
-1.  **/upload**:
-    ------------
+1.  ## **/upload**:
+
     
     URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
     
@@ -136,9 +136,8 @@ _**Python Example:**_
 
   
 
-2.  **/group-memebers**:  
+2. ## **/group-memebers**:  
     
-    -----------------------
     
     URL: [https://wachatanalyzer.onrender.com/group-memebers](https://wachatanalyzer.onrender.com/group-memebers)
     
