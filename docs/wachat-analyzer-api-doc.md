@@ -74,7 +74,7 @@ _**Example**_
 Endpoints
 ---------
 
-1.  ## /upload:  
+1.  ## **/upload**:  
     
   
     
