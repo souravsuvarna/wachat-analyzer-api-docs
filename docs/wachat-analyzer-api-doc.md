@@ -56,7 +56,7 @@ _**Example**_
 
 ### Response Body
 
-> > > > > > _**Sample JSON**_
+ _**Sample JSON**_
 
     {
       "user": "jhon",
