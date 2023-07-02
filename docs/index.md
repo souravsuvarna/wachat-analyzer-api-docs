@@ -75,7 +75,7 @@ Endpoints
 ---------
 
 1. ## **/upload** :
--
+
     
     URL: [https://wachatanalyzer.onrender.com/upload](https://wachatanalyzer.onrender.com/upload)
     
